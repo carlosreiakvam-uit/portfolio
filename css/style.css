@@ -5,3 +5,26 @@
     transform: translate(-50%, -50%); /* Move the element up by half its own height */
     width: 75%; /* Set the width of the element */
 }
+
+.section {
+    padding: 8rem 0 7rem;
+    text-align: center;
+}
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+    transition: 0.1s;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
