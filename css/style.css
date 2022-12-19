@@ -67,7 +67,8 @@ div {
     overflow: hidden;
 }
 
-@media (min-width: 400px) {
+/*larger than phablet*/
+@media (min-width: 550px) {
     .card {
         background-color: lightcoral;
         color: black;
