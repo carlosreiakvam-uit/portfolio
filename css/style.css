@@ -39,8 +39,8 @@ div {
     background-color: lightcoral;
     color: black;
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 0%;
+    margin-right: 0%;
     padding: 30px;
 }
 
@@ -65,4 +65,16 @@ div {
     width: 100%;
     position: relative;
     overflow: hidden;
+}
+
+@media (min-width: 400px) {
+    .card {
+        background-color: lightcoral;
+        color: black;
+        text-align: left;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 30px;
+    }
+
 }
