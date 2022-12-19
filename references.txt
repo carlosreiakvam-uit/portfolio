@@ -1,0 +1,3 @@
+AI Images: https://www.craiyon.com/
+framework: Skeleton
+swiper: swiperjs

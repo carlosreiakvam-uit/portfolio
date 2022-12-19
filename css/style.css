@@ -6,6 +6,13 @@
     width: 75%; /* Set the width of the element */
 }
 
+.card {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    margin: 40px;
+}
+
 .section {
     padding: 8rem 0 7rem;
     text-align: center;
