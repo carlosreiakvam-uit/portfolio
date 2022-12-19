@@ -12,6 +12,11 @@
     width: 50%;
 }
 
+div {
+    border: 1px solid green;
+    word-wrap: revert;
+}
+
 .tight {
     margin: 0;
 }
