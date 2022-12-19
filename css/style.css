@@ -1,20 +1,47 @@
+/*.center {*/
+/*    position: absolute; !* Position the element absolutely within its parent *!*/
+/*    top: 50%; !* Position the element 50% down from the top of its parent *!*/
+/*    left: 50%; !* Position the element 50% in from the left of its parent *!*/
+/*    transform: translate(-50%, -50%); !* Move the element up by half its own height *!*/
+/*    width: 75%; !* Set the width of the element *!*/
+/*}*/
 .center {
-    position: absolute; /* Position the element absolutely within its parent */
-    top: 50%; /* Position the element 50% down from the top of its parent */
-    left: 50%; /* Position the element 50% in from the left of its parent */
-    transform: translate(-50%, -50%); /* Move the element up by half its own height */
-    width: 75%; /* Set the width of the element */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.tight {
+    margin: 0;
+}
+
+.tight-top {
+    margin-top: 0;
+}
+
+.tight-bottom {
+    margin-bottom: 0;
+}
+
+.card-image {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+
 }
 
 .card {
-    background-color: lightgray;
+    background-color: lightcoral;
     color: black;
-    text-align: center;
-    margin: 40px;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 30px;
 }
 
 .section {
-    padding: 8rem 0 7rem;
+    padding: 2rem 0 7rem;
     text-align: center;
 }
 

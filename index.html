@@ -9,7 +9,6 @@
     <!-- Basic Page Needs
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>Your page title here :)</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -32,7 +31,8 @@
 <div class="container section">
     <div class="row">
         <div class="two column" style="margin-top: 15%">
-            <h1>Portfolio</h1>
+            <h1 class="tight-bottom">Carlos Reiakvam</h1>
+            <h5 class="tight-top">Portfolio</h5>
             <p>A collection of projects made by me in my bachelors degree in computer engineering at University of
                 Tromsø, Norway.<br>
                 Status: Currently finishing my bachelor's degree from University of Tromsø, Norway. Looking for
@@ -42,18 +42,25 @@
 </div>
 
 
-<p>Artificial Intelligence</p>
+<!--<h2 style="margin-left: 20%" class="tight-bottom">AI</h2>-->
 <div id="slider" class="swipe card">
     <div class="swipe-wrap">
         <div>
-            <h5>Predictions of flowertypes using k-nearest neighbour</h5>
-            <img src="images/iris flower.png" alt="Iris FlowerIris Flower" width="256" height="256">
-            <p>K-nearest neighbor (KNN) is a supervised machine learning algorithm used for classification and
-                regression. It works by finding the K "nearest" data points to a given input data point, and
-                using
-                those data points to make a prediction about the input data point.</p>
+            <img class="center card-image" src="images/iris_plot.png" alt="Iris FlowerIris Flower" width="400"
+                 height="300">
+
+            <div>
+                <p class="tight-bottom" style="font-weight: bold ">Predictions of flowertypes using k-nearest
+                    neighbour</p>
+                <p>K-nearest neighbor (KNN) is a supervised machine learning algorithm used for classification and
+                    regression. It works by finding the K "nearest" data points to a given input data point, and
+                    using those data points to make a prediction about the input data point.
+                    By utilizing KNN I was able to predict correct iris type from unseen data</p>
+
+            </div>
 
         </div>
+        <div>tjo</div>
         <div>la</div>
         <div>hopp</div>
     </div>
@@ -61,12 +68,11 @@
 
 
 <!--<script src="/node_modules/swipejs/swipe.js"></script>-->
-<script src="https://cdn.jsdelivr.net/npm/swipejs/swipe.min.js"></script>k
+<script src="https://cdn.jsdelivr.net/npm/swipejs/swipe.min.js"></script>
 
 <script>
     window.mySwipe = new Swipe(document.getElementById('slider'), {
         startSlide: 0,
-        speed: 400,
         draggable: true,
         continuous: true,
         disableScroll: false,
@@ -80,8 +86,8 @@
 </script>
 
 </body>
-<footer>
-    <p>Author: Carlos Reiakvam</p>
-    <p><a href="mailto:cre032@uit.no">cre032@uit.no</a></p>
+<footer style="text-align: center; margin-top: 2%">
+    <p>This site is made by: Carlos Reiakvam,
+        <a href="mailto:cre032@uit.no">cre032@uit.no</a></p>
 </footer>
 </html>
