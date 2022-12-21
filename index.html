@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Carlos Reiakvam</title>
+    <meta charset="utf-8"/>
 
+    <title>Carlos Reiakvam's Portfolio</title>
 
     <!-- Basic Page Needs
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Carlos Reiakvam's Portfolio">
+    <meta name="author" content="Carlos Reiakvam">
 
     <!-- Mobile Specific Metas
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -20,75 +19,122 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+
+    <!--    Skeleton Styling-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+
+    <!--    Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
 
-<div class="container section">
+<div class="container section" style="margin-bottom: 30px;padding-bottom: 0">
     <div class="row">
         <div class="two column" style="margin-top: 5%">
             <h1 class="tight-bottom">Carlos Reiakvam</h1>
             <h5 class="tight-top">Portfolio</h5>
-            <p>A collection of projects made by me during my bachelors degree in computer engineering at the University
-                of
-                Tromsø, Norway.<br>
+
         </div>
     </div>
 </div>
 
+<!--<div class="" style="margin-top: 20px ">-->
+<!--    <div class="row">-->
+<!--        <div class="twelve column">-->
+<!-- Swiper -->
+<div class="swiper swiperCard  ">
+    <div class="swiper-wrapper  ">
 
-<!--<h2 style="margin-left: 20%" class="tight-bottom">AI</h2>-->
-<div id="slider" class="swipe card">
-    <div class="swipe-wrap">
-        <div>
-            <div style="margin-right: 50px">
-                <img class="center card-image" src="images/iris_plot.png" alt="Iris FlowerIris Flower" >
-
-                <div>
-                    <p class="tight-bottom" style="font-weight: bold ">Predictions of flowertypes using k-nearest
-                        neighbour</p>
-                    <p>K-nearest neighbor (KNN) is a supervised machine learning algorithm used for classification and
-                        regression. It works by finding the K "nearest" data points to a given input data point, and
-                        using those data points to make a prediction about the input data point.
+        <div class="swiper-slide ">
+            <div>
+                <img class="card-image" src="images/profil_mid_edit.png" alt="Profile picture">
+                <!--                <h5 class="sliderText tight-bottom">Welcome!</h5>-->
+                <div class="card-text tight">
+                    <p>
+                        Hello and welcome! My name is Carlos Reiakvam and the following is
+                        a selection of projects I have completed during my computer engineering studies at UIT
+                        Norway.
+                        I hope you enjoy browsing through my work and learning more about my skills and interests.
+                        Thank you for visiting!
                     </p>
-                    <p>By utilizing KNN I was able to predict correct iris type from unseen data</p>
-
                 </div>
             </div>
 
+
         </div>
-        <div>tjo</div>
-        <div>la</div>
-        <div>hopp</div>
+
+        <div class="swiper-slide">
+            <img class="card-image" src="images/robot_in_nature.png" alt="Profile picture">
+            <div class="card-text">
+                <div style="text-align: center">
+                    <button>AI Repository</button>
+                </div>
+                <p class="sliderText" style="margin-bottom: 4%">
+                    During my bachelor's studies, I have focused on artificial intelligence and have subsequently gained
+                    significant experience in this field through my work.
+                    In addition to using popular libraries such as PyTorch and TensorFlow, I have also spent
+                    considerable
+                    time
+                    writing algorithms from scratch using only numpy and pandas. This has helped me greatly in
+                    solidifying my
+                    understanding
+                    of modern artificial intelligence.
+                </p>
+
+
+            </div>
+        </div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+    <div class="swiper-pagination"></div>
+</div>
+<!--</div>-->
+<div class="container section">
+    <div class="row ">
+        <div class="one-third column"><a href="tel:+4740542952">+47 40542952</a></div>
+        <div class="one-third column"><a href="mailto:cre032@uit.no">cre032@uit.no</a></div>
+        <div class="one-third column"><a href="https://linktr.ee/carlosreiakvam">linktree</a></div>
     </div>
 </div>
 
 
-<!--<script src="/node_modules/swipejs/swipe.js"></script>-->
-<script src="https://cdn.jsdelivr.net/npm/swipejs/swipe.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+<!-- Initialize Swiper -->
 <script>
-    window.mySwipe = new Swipe(document.getElementById('slider'), {
-        startSlide: 0,
-        draggable: true,
-        continuous: true,
-        disableScroll: false,
-        stopPropagation: false,
-        ignore: ".scroller",
-        callback: function (index, elem, dir) {
+    var swiper = new Swiper(".swiperCard", {
+        keyboard: {
+            enabled: true,
         },
-        transitionEnd: function (index, elem) {
-        }
+        loop: true,
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     type: "fraction",
+        // },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
-</script>
 
+
+</script>
 </body>
-<footer style="text-align: center; margin-top: 2%">
-    <p>This site is made by: Carlos Reiakvam,
-        <a href="mailto:cre032@uit.no">cre032@uit.no</a></p>
-</footer>
 </html>
