@@ -68,13 +68,20 @@ div {
 }
 
 /*larger than phablet*/
-@media (min-width: 550px) {
+@media (min-width: 800px) {
     .card {
-        background-color: lightcoral;
-        color: black;
-        text-align: left;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 30px;
+    }
+}
+
+
+/*larger than desktop hd*/
+@media (min-width: 1400px) {
+    .card {
+        margin-left: 24%;
+        margin-right: 24%;
         padding: 30px;
     }
 
