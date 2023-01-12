@@ -3,7 +3,7 @@
 /*    position: relative;*/
 /*    height: 100%;*/
 /*}*/
-a {
+a, h1 {
     color: black;
 }
 
@@ -49,10 +49,16 @@ a, p {
     padding-top: 0;
 }
 
+.p-header {
+    font-weight: bold;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 
 div.swiper-button-prev,
 div.swiper-button-next {
-    color: green;
+    color: black;
 }
 
 span.swiper-pagination-bullet {
@@ -122,6 +128,7 @@ span.swiper-pagination-bullet {
         width: 50%;
         margin-bottom: 2%;
     }
+
     p {
         font-size: 16px;
     }
